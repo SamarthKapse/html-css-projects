@@ -1,0 +1,91 @@
+.box {
+    height: 582px;
+    width: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1F1F1F;
+    border-radius: 8px;
+    box-shadow : 0 4px 10px rgba(255, 255, 255, 0.1);
+    flex-wrap: wrap;
+}
+
+body {
+    /* position: relative; means the element stays in its normal place but you can move it using top, left, right, or bottom. If you don’t add these, it looks the same as static (default). It’s useful when you want to adjust an element without affecting others. */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #141414;
+    margin: 45px;
+}
+
+img {
+    /* It requires the element to be display: block; and have a fixed width. */
+    /* margin: 0 auto; is only for horizontal centering. */
+    display: block;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px; 
+    margin-bottom: 15px;
+    margin-top: 42px;
+}
+
+h2 {
+    font-family: fa;
+    font-size: 20px;
+    margin: 5px 0px;
+    color: #EEEEEE;
+}
+
+h3 {
+    font-family: fa;
+    font-size: 16px;
+    margin: 5px 0px;
+    color: #B5D557;
+}
+
+p {
+    color: #C2C2C2;
+}
+
+button {
+    font-family: fa;
+    height: 40px;
+    width: 280px;
+    margin: 10px 0px;
+    border-radius: 8px;
+    color: #EEEEEE;
+    background-color: #333333;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+/* :hover (When You Put Your Mouse on the Button) */
+button:hover {
+    background-color: #43A047;
+    transform: scale(1.02);
+}
+/* :active (When You Click the Button) */
+button:active {
+    background-color: #388E3C; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slight shrink effect */
+}
+
+@font-face {
+    font-family: fa;
+    src: url("fonts/static/Inter-Bold.ttf");
+}
+
+/* 
+.box h2 h3 {
+    /* font-size: 20px; */
+    /*  
+        5px → Margin at the top and bottom  (adds 5 pixels of space above and below the element)
+        0 → Margin at the left and right (no extra space on the sides).
+     */
+    /* margin: 5px 0;  
+}    
+    
+*/
+
